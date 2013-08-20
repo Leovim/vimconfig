@@ -43,7 +43,6 @@ Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
-" Bundle 'file:///Users/leo/.vim/bundle/zencoding-vim'
 
 " set ai
 set hls
