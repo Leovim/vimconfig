@@ -12,7 +12,8 @@ set nowritebackup
 set wildmenu
 set wildmode=longest:full
 set cursorline
-set cursorcolumn
+" set cursorcolumn
+set nocursorcolumn
 set foldmethod=syntax
 set helplang=cn
 set backspace=indent,eol,start
@@ -43,7 +44,6 @@ Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
-" Bundle 'file:///Users/leo/.vim/bundle/zencoding-vim'
 
 " set ai
 set hls
@@ -59,7 +59,8 @@ set t_Co=256
 " set background=dark
 colorscheme leo
 
-let g:indent_guides_guide_size=1
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=2
 " let g:user_zen_leader_key='<c-e>'
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<c-e>'
