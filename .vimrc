@@ -12,7 +12,8 @@ set nowritebackup
 set wildmenu
 set wildmode=longest:full
 set cursorline
-set cursorcolumn
+" set cursorcolumn
+set nocursorcolumn
 set foldmethod=syntax
 set helplang=cn
 set backspace=indent,eol,start
