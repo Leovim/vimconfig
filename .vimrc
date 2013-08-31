@@ -57,7 +57,8 @@ set ignorecase
 set hlsearch
 set t_Co=256
 " set background=dark
-colorscheme leo
+colorscheme molokai
+let g:molokai_original=1
 
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=2
