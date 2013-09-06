@@ -1,5 +1,3 @@
-set syntax=enable
-set syntax=on
 set expandtab
 set showmatch
 set lbr
@@ -21,7 +19,8 @@ set nocompatible
 
 " set vundle
 filetype off
-filetype plugin indent on
+filetype plugin on 
+filetype indent on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -38,16 +37,19 @@ Bundle 'godlygeek/tabular'
 Bundle 'taglist.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
+Bundle 'file:///Users/leo/.vim/bundle/customed-files'
 
 " set ai
 set hls
 syntax on
+syntax enable
 set history=100
 set ruler
 set shiftwidth=2
@@ -75,6 +77,8 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 set complete-=k complete+=k
 
 autocmd! bufwritepost .vimrc source %
+autocmd BufNewFile,BufRead  *.coffee set filetype=coffee
+
 set guioptions-=T
 set guioptions-=r
 set guioptions-=b
