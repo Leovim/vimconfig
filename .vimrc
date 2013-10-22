@@ -1,5 +1,3 @@
-set syntax=enable
-set syntax=on
 set expandtab
 set showmatch
 set lbr
@@ -20,6 +18,8 @@ set backspace=indent,eol,start
 set nocompatible
 
 " set vundle
+syntax on
+syntax enable
 filetype off
 filetype plugin indent on
 set rtp+=~/.vim/bundle/vundle/
@@ -36,6 +36,7 @@ Bundle 'showcolor.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'taglist.vim'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -43,11 +44,11 @@ Bundle 'maksimr/vim-jsbeautify'
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lukaszb/vim-web-indent'
-Bundle 'file:///Users/leo/.vim/bundle/visualmark'
+Bundle 'file:///home/leo/.vim/bundle/visualmark'
+Bundle 'file:///home/leo/.vim/bundle/customed-files'
 
 " set ai
 set hls
-syntax on
 set history=100
 set ruler
 set shiftwidth=2
@@ -57,7 +58,9 @@ set ignorecase
 set hlsearch
 set t_Co=256
 " set background=dark
-colorscheme leo
+colorscheme molokai
+let g:molokai_original=1
+let g:rehash256=1
 
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=2
@@ -68,12 +71,16 @@ let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:functi
 
 inoremap <c-b> <left>
 inoremap <c-f> <right>
+inoremap <c-x> <c-w>
+nnoremap <c-x> <c-w>
+vnoremap <c-x> <c-w>
  
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 
 set complete-=k complete+=k
 
 autocmd! bufwritepost .vimrc source %
+autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 set guioptions-=T
 set guioptions-=r
 set guioptions-=b
@@ -90,8 +97,9 @@ map <silent> <F2> :if &guioptions =~#'T' <Bar>
 :inoremap <C-ENTER> <ESC>A;<CR>
 :inoremap ( ()<ESC>i
 :inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { <c-r>=ClsoeBrace()<CR>
-:inoremap } <c-r>=ClosePair('}')<CR>
+:inoremap { {}<ESC>i
+":inoremap { <c-r>=ClsoeBrace()<CR>
+":inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
 :nnoremap ;; A;<ESC><CR>
@@ -179,6 +187,8 @@ let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags' "设置ctags命令�
 nnoremap <leader>tl : Tlist<CR> "设置关闭和打开taglist窗口的快捷键
 "set tags=/Users/changtong2011/python/tags, /Users/changtong2011/c/tags
 "}
+
+" set vim-coffee-script
 
 " 此处用来进行各种配置新选项的测试写入
 let g:user_emmet_settings = {
