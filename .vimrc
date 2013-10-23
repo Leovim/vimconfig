@@ -18,8 +18,6 @@ set backspace=indent,eol,start
 set nocompatible
 
 " set vundle
-syntax on
-syntax enable
 filetype off
 filetype plugin on 
 filetype indent on
