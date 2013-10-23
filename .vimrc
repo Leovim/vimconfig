@@ -18,6 +18,8 @@ set backspace=indent,eol,start
 set nocompatible
 
 " set vundle
+syntax on
+syntax enable
 filetype off
 filetype plugin on 
 filetype indent on
@@ -35,6 +37,7 @@ Bundle 'showcolor.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'taglist.vim'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kchmck/vim-coffee-script'
@@ -95,8 +98,9 @@ map <silent> <F2> :if &guioptions =~#'T' <Bar>
 :inoremap <C-ENTER> <ESC>A;<CR>
 :inoremap ( ()<ESC>i
 :inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { <c-r>=ClsoeBrace()<CR>
-:inoremap } <c-r>=ClosePair('}')<CR>
+:inoremap { {}<ESC>i
+":inoremap { <c-r>=ClsoeBrace()<CR>
+":inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
 :nnoremap ;; A;<ESC><CR>
@@ -184,6 +188,8 @@ let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags' "设置ctags命令�
 nnoremap <leader>tl : Tlist<CR> "设置关闭和打开taglist窗口的快捷键
 "set tags=/Users/changtong2011/python/tags, /Users/changtong2011/c/tags
 "}
+
+" set vim-coffee-script
 
 " 此处用来进行各种配置新选项的测试写入
 let g:user_emmet_settings = {
