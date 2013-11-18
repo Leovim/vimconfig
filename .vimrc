@@ -42,8 +42,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'edsono/vim-matchit'
-" Bundle 'Lokaltog/vim-powerline'
-Bundle 'bling/vim-airline'
+Bundle 'Lokaltog/vim-powerline'
+" Bundle 'bling/vim-airline'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-commentary'
@@ -182,8 +182,8 @@ let g:Powerline_symbols = 'fancy'
 "}
 
 " airline configurations
-let g:airline_powerline_fonts = 0
-let g:airline_theme = 'badwolf'
+" let g:airline_powerline_fonts = 0
+" let g:airline_theme = 'molokai'
 
 "关于taglist的配置
 "taglist{
