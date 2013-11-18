@@ -211,3 +211,11 @@ let g:user_emmet_settings = {
 \       'extends': 'html',
 \   },
 \}
+
+" 80 tip
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  " Emulate
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+endif
