@@ -42,9 +42,14 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'lukaszb/vim-web-indent'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-commentary'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
 Bundle 'file:///Users/leo/.vim/bundle/customed-files'
 
@@ -73,6 +78,8 @@ let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:functi
 
 inoremap <c-b> <left>
 inoremap <c-f> <right>
+nmap <BS> gcc
+vmap <BS> gc
  
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 
@@ -173,9 +180,10 @@ set laststatus=2
 "powerline{
 let g:Powerline_symbols = 'fancy'
 "}
-"
-"启用插件pathogen
-" call pathogen#infect()
+
+" airline configurations
+let g:airline_powerline_fonts = 0
+let g:airline_theme = 'badwolf'
 
 "关于taglist的配置
 "taglist{
