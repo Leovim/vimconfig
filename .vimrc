@@ -48,8 +48,9 @@ Bundle 'lukaszb/vim-web-indent'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-commentary'
 Bundle 'terryma/vim-multiple-cursors'
-Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
+Bundle 'rizzatti/dash.vim'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
 Bundle 'file:///Users/leo/.vim/bundle/customed-files'
 
@@ -92,7 +93,7 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=b
 set guioptions-=L
-set guifont=Monaco\ for\ Powerline:h13
+set guifont=Monaco:h13
 map <silent> <F2> :if &guioptions =~#'T' <Bar>
 \set guioptions-=T <Bar>
 \else <Bar>
