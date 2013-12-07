@@ -51,6 +51,7 @@ Bundle 'terryma/vim-multiple-cursors'
 " Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'rizzatti/dash.vim'
+Bundle 'rizzatti/funcoo.vim'
 Bundle 'file:///Users/leo/.vim/bundle/visualmark'
 Bundle 'file:///Users/leo/.vim/bundle/customed-files'
 
