@@ -94,7 +94,7 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=b
 set guioptions-=L
-set guifont=Monaco:h13
+set guifont=Monaco\ for\ Powerline:h13
 map <silent> <F2> :if &guioptions =~#'T' <Bar>
 \set guioptions-=T <Bar>
 \else <Bar>
