@@ -82,6 +82,10 @@ inoremap <c-b> <left>
 inoremap <c-f> <right>
 nmap <BS> gcc
 vmap <BS> gc
+
+imap <c-j> <Esc>
+nmap <c-j> <Esc>
+vmap <c-j> <Esc>
  
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 
