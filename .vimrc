@@ -24,7 +24,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " my Bundle
 Plugin 'L9'
 " Bundle 'mattn/emmet-vim'
