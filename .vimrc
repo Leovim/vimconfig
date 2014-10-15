@@ -28,19 +28,19 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 " my Bundle
 Bundle 'L9'
-Bundle 'mattn/emmet-vim'
+" Bundle 'mattn/emmet-vim'
 Bundle 'Shougo/neocomplcache.vim'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdtree'
 Bundle 'showcolor.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'taglist.vim'
-Bundle 'kchmck/vim-coffee-script'
+" Bundle 'kchmck/vim-coffee-script'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'maksimr/vim-jsbeautify'
+" Bundle 'maksimr/vim-jsbeautify'
 Bundle 'edsono/vim-matchit'
 Bundle 'Lokaltog/vim-powerline'
 " Bundle 'bling/vim-airline'
@@ -52,7 +52,6 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-fugitive'
 Bundle 'rizzatti/dash.vim'
 Bundle 'rizzatti/funcoo.vim'
-Bundle 'file:///Users/leo/.vim/bundle/visualmark'
 Bundle 'file:///Users/leo/.vim/bundle/customed-files'
 
 " set ai
@@ -93,6 +92,7 @@ set complete-=k complete+=k
 
 autocmd! bufwritepost .vimrc source %
 autocmd BufNewFile,BufRead  *.coffee set filetype=coffee
+autocmd BufNewFile,BufRead  *.scala set filetype=scala
 
 set guioptions-=T
 set guioptions-=r
@@ -225,3 +225,8 @@ else
   " Emulate
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 endif
+
+" you complete me
+let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-N>'
