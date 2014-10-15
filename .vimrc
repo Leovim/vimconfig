@@ -20,39 +20,41 @@ set nocompatible
 " set vundle
 filetype off
 filetype plugin on 
-filetype indent on
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " my Bundle
-Bundle 'L9'
+Plugin 'L9'
 " Bundle 'mattn/emmet-vim'
-Bundle 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplcache.vim'
 " Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/nerdtree'
-Bundle 'showcolor.vim'
-Bundle 'msanders/snipmate.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'taglist.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'showcolor.vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'taglist.vim'
 " Bundle 'kchmck/vim-coffee-script'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'nathanaelkane/vim-indent-guides'
 " Bundle 'maksimr/vim-jsbeautify'
-Bundle 'edsono/vim-matchit'
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'edsono/vim-matchit'
+Plugin 'Lokaltog/vim-powerline'
 " Bundle 'bling/vim-airline'
-Bundle 'lukaszb/vim-web-indent'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'tpope/vim-commentary'
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'lukaszb/vim-web-indent'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-commentary'
+Plugin 'terryma/vim-multiple-cursors'
 " Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'rizzatti/dash.vim'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'file:///Users/leo/.vim/bundle/customed-files'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rizzatti/dash.vim'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'file:///Users/leo/.vim/bundle/customed-files'
+
+call vundle#end()
+filetype indent on
 
 " set ai
 set hls
