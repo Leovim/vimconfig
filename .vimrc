@@ -117,7 +117,7 @@ map <silent> <F2> :if &guioptions =~#'T' <Bar>
 ":inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
-:nnoremap ;; A;<ESC><CR>
+:nnoremap ;; A;<ESC>
 ":noremap <c-t>=NERDTree
 
 function! ClosePair(char)
